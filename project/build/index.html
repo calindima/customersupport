@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper teal">
+            <a href="#" class="brand-logo center">Customer support</a>
+            <ul id="nav-mobile" class="left">
+                <li>
+                    <a id="completedTasks" href="#">Completed:
+                        <span>0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="app">
+
+    </div>
+
+    <template id="requestTemplate">
+        <article class="request card small">
+            <div class="card-content">
+                <div class="importance"></div>
+                <h5 class="name card-title">
+                    <span>NAME</span>
+                </h5>
+                <p class="time">time's up</p>
+                <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolores!</p>
+                <a class="activator waves-effect waves-light btn">Read more ...</a>
+                <a class="waves-effect waves-light btn red">Mark as completed</a>
+            </div>
+            <div class="card-reveal">
+                <h5 class="name card-title">
+                    <span>NAME</span>
+                    <i class="material-icons right">close</i>
+                </h5>
+                <p class="time">time's up</p>
+                <p class="place">anywhere</p>
+                <p class="full-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, at impedit maiores aliquid architecto similique,
+                    ab voluptatum aut adipisci perferendis necessitatibus laudantium ipsam natus culpa accusantium quasi,
+                    sed soluta sit!.</p>
+            </div>
+        </article>
+    </template>
+
+    <script src="js/main.transpiled.js"></script>
+</body>
+
+</html>

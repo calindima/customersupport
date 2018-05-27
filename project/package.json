@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sassify": "node-sass source/scss/style.scss build/css/style.min.css --output-style compressed",
+    "transpile": "babel source/js/main.js --out-file build/js/main.transpiled.js --presets=env",
+    "watcher": "watch \"npm run sassify && npm run transpile\" source/"
+  },
+  "author": "Calin Dima",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "materialize-css": "^1.0.0-rc.1",
+    "node-sass": "^4.9.0",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {}
+}
